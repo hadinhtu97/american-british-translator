@@ -6,7 +6,7 @@ The /api/translate route should handle the way time is written in American and B
 
 The /api/translate route should also handle the way titles/honorifics are abbreviated in American and British English. For example, Doctor Wright is abbreviated as "Dr Wright" in British English and "Dr. Wright" in American English. See /public/american-to-british-titles.js for the different titles your application should handle.
 
-Wrap any translated spelling or terms with <span class="highlight">...</span> tags so they appear in green.
+Wrap any translated spelling or terms with span class="highlight">.../span> tags so they appear in green.
 
 If one or more of the required fields is missing, return { error: 'Required field(s) missing' }.
 
