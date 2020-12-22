@@ -47,3 +47,18 @@ input[type=submit]:active {
     color: white;
     background-color: #dd4814;
 }
+
+textarea {
+    outline: none;
+    resize: none;
+    padding: 5px;
+    border: 1px solid #5e0080;
+}
+
+.highlight {
+    color: #5e0080;
+}
+
+.error {
+    color: red;
+}
