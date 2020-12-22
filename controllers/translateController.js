@@ -29,7 +29,7 @@ function TranslateController() {
         }
         for (let key in americanToBritishTitles) {
             let regex = new RegExp(key, 'gi');
-            translation = translation.replace(regex, beginWrap + americanToBritishTitles[key] + endWrap);
+            translation = translation.replace(regex, beginWrap + americanToBritishTitles[key].charAt(0).toUpperCase() + americanToBritishTitles[key].slice(1) + endWrap);
         }
         translation = translation.replace(regexAmericanTime, beginWrap + "$1.$2" + endWrap);
         return translation;
@@ -47,7 +47,7 @@ function TranslateController() {
         }
         for (let key in americanToBritishTitles) {
             let regex = new RegExp(americanToBritishTitles[key], 'gi');
-            translation = translation.replace(regex, beginWrap + key + endWrap);
+            translation = translation.replace(regex, beginWrap + key.charAt(0).toUpperCase() + key.slice(1) + endWrap);
         }
         translation = translation.replace(regexBritishTime, beginWrap + "$1:$2" + endWrap);
 
