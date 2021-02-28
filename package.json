@@ -1,7 +1,7 @@
 {
   "name": "american-british-translator",
   "version": "1.0.0",
-  "description": "american-british-translator",
+  "description": "Backend APIs translate between american and british",
   "main": "server.js",
   "scripts": {
     "test": "mocha --timeout 5000",
@@ -12,10 +12,8 @@
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "cors": "^2.8.0",
-    "dotenv": "^8.2.0",
     "express": "^4.12.4",
-    "mocha": "^8.2.1",
-    "mongoose": "^5.11.8"
+    "mocha": "^8.2.1"
   },
   "author": "Tu Ha Dinh",
   "license": "ISC"
